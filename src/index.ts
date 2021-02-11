@@ -2,7 +2,7 @@ import { Client } from 'discord.js'
 import Env from '@discord-ts-app/env'
 import { NodeEmitter } from '@discord-ts-app/lifecycle'
 import Core from './Interfaces/Core'
-import Event from './interfaces/Event'
+import Event from './Interfaces/Event'
 import Command from './Interfaces/Command'
 import Middleware from './Interfaces/Middleware'
 
