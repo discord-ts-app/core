@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@discord-ts-app/core@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@discord-ts-app/core/-/core-2.0.4.tgz#29b07003200476d85c7d109d0a3c30988303625f"
+  integrity sha512-+hNJsbi/b2re8Y/EgqUuHrAEB2ZTOzH7VuQ4cW7J4bvVYkFKBo3a+Bop2i8SCxmb3DVi33+lmNmJWFKjVD/UVA==
+  dependencies:
+    "@discord-ts-app/env" "^1.0.0"
+    "@discord-ts-app/ignitor" "^1.2.2"
+    "@discord-ts-app/lifecycle" "^1.0.0"
+    "@types/node" "^14.14.20"
+    "@types/ws" "^7.4.0"
+    discord.js "^12.5.1"
+    dotenv "^8.2.0"
+    typescript "^4.1.3"
+
 "@discord-ts-app/env@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@discord-ts-app/env/-/env-1.0.0.tgz#c2e9f1b95e915cf1813b905b272af3cd9a82a076"
@@ -9,6 +23,34 @@
   dependencies:
     "@types/node" "^14.14.20"
     dotenv "^8.2.0"
+    typescript "^4.1.3"
+
+"@discord-ts-app/guard@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@discord-ts-app/guard/-/guard-1.0.7.tgz#48967f5c7735f97e6da2c1f08d200b20cd175598"
+  integrity sha512-rh0bZFb+PRCM8gj3wKhAHYnXhEfiLyWaiQibykfDFUbzWi9xLuxsN5t5bhESs95jc5Y/tvWHWtK0iH9Hx2uepw==
+  dependencies:
+    "@discord-ts-app/core" "^2.0.4"
+    "@discord-ts-app/env" "^1.0.0"
+    "@discord-ts-app/lifecycle" "^1.0.3"
+    "@types/node" "^14.14.20"
+    "@types/ws" "^7.4.0"
+    discord.js "^12.5.1"
+    typescript "^4.1.3"
+
+"@discord-ts-app/ignitor@^1.2.2", "@discord-ts-app/ignitor@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@discord-ts-app/ignitor/-/ignitor-1.2.3.tgz#d58f0eab9a71f737eb588f663919dd272cc41fb0"
+  integrity sha512-IkP587Eb8hEmu21QALH0MI1kKiCEHMlZbZ2E4j3KON4T7FWdyIuB6kALa+i7vOnXUhEyxmw4/0vIpDuikV6GoQ==
+  dependencies:
+    "@discord-ts-app/core" "^2.0.4"
+    "@discord-ts-app/env" "^1.0.0"
+    "@discord-ts-app/guard" "^1.0.7"
+    "@discord-ts-app/lifecycle" "^1.0.3"
+    "@discord-ts-app/loader" "^1.0.0"
+    "@types/node" "^14.14.20"
+    "@types/ws" "^7.4.0"
+    discord.js "^12.5.1"
     typescript "^4.1.3"
 
 "@discord-ts-app/lifecycle@^1.0.0":
@@ -19,6 +61,25 @@
     "@types/node" "^14.14.20"
     "@types/ws" "^7.4.0"
     discord.js "^12.5.1"
+    typescript "^4.1.3"
+
+"@discord-ts-app/lifecycle@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@discord-ts-app/lifecycle/-/lifecycle-1.0.3.tgz#dfba4631c4d8e376cb1d70bf5f5ede0fe490eb2e"
+  integrity sha512-LQimSKEbgYnCT5bVM21IXEUDN9fo9CVzaMgzLQNN6R9DmdZgPNPnajfdy5BOf9bIgGaYRDM1EHJ34qlsow/+Qw==
+  dependencies:
+    "@types/node" "^14.14.20"
+    "@types/ws" "^7.4.0"
+    discord.js "^12.5.1"
+    typescript "^4.1.3"
+
+"@discord-ts-app/loader@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@discord-ts-app/loader/-/loader-1.0.0.tgz#b42e586d13e937dd0f6ec5773a66d580e06742d9"
+  integrity sha512-wWbKLw3ZjRykahriFzWT4WiL8hV6Evs6HbhJYLjo7WDR/Q3PbIssSh0j/U3Dpr8fLr47haD05+JZdT4jsaoaqg==
+  dependencies:
+    "@types/node" "^14.14.20"
+    fs "^0.0.1-security"
     typescript "^4.1.3"
 
 "@discordjs/collection@^0.1.6":
@@ -94,6 +155,11 @@ event-target-shim@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
 
 mime-db@1.45.0:
   version "1.45.0"

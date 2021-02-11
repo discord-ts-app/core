@@ -1,6 +1,4 @@
-import { Lifecycles } from '@discord-ts-app/lifecycle'
-
 export default interface Middleware {
-	readonly lifecycle: Lifecycles
+	readonly lifecycle: 'messageReceived' | 'commandReceived' | 'createDiscordClient' | 'starting' | 'commandLoaded' | 'eventLoaded' | 'middlewareLoaded'
 	run(...params: any): Promise<void>
 }
